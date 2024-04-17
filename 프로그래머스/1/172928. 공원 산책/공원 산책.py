@@ -11,7 +11,7 @@ def solution(park, routes):
         dx, dy = direction[d]
         tmp_x, tmp_y = x, y
         for i in range(int(n)):
-            if 0 <= tmp_x+dx < h and 0 <= tmp_y+dy < w and park[tmp_x+dx][tmp_y+dy] in "SO":
+            if 0 <= tmp_x+dx < h and 0 <= tmp_y+dy < w and park[tmp_x+dx][tmp_y+dy] != "X":
                 tmp_x += dx
                 tmp_y += dy
             else:
